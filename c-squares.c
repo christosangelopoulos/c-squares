@@ -2,6 +2,7 @@
 //c script written by Christos Angelopoulos, Jan 2023
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
 int compareTwoString(char *, char *);
@@ -88,6 +89,7 @@ void new_coordinates(int (*cursor_x)[10],int (*cursor_y)[10],int (*direction)[10
 }
 
 int main(int argc, char **argv) {
+ srand(time(0));
 //declare variables
  char *flag_h="-h";
  char *flag_help="--help";
@@ -237,7 +239,8 @@ int main(int argc, char **argv) {
      new_coordinates(&cursor_x,&cursor_y,&direction,&s,&row,&col,&color,&ii,&mono,&sq_height,&sq_width,&type);
      }
     }
-  system("clear");
+//  system("clear");
+  fputs("\x1b[H", stdout);
   for(a=0;a+1<w.ws_row;a++)
   {
    for(b=0;b<w.ws_col;b++)
