@@ -2,6 +2,8 @@
 
 This script written in the C language will render random coloured rectangulars in the terminal, while the font, speed, density, color, ratio and number of  the shapes drawn are fully costumizable.
 
+![1.png](screenshots/1.png){height=200}
+
 Every time a rectangular is complete, a new one starts to take shape.
 
 This script was inspired by this bash script:
@@ -42,7 +44,7 @@ That's it!
     |_Height_|8 rows|67 rows|
     |_Width_|12 columns|270 columns|
 
-- Moving around / resizing excessively the terminal window on the screen **may** result in dump cores. 
+- Moving around / resizing excessively the terminal window on the screen **may** result in dump cores.
 
 
 ---
