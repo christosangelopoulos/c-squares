@@ -21,7 +21,7 @@ It also is a variation of another project of mine:
 First the user has to clone the repo:
 
 ```
-git clone https://gitlab.com/christosangel/asciii-matrix.git
+git clone https://gitlab.com/christosangel/c-squares.git
 ```
 After changing directory to `c-squares/`, the c script is compiled:
 
