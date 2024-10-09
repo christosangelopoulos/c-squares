@@ -31,7 +31,7 @@ That's it!
 
 ---
 
-**NOTICE: **
+**NOTICE:**
 
 - Before running the script, make sure that you have a font that includes **box drawings characters** installed in your system.
 
