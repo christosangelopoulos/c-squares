@@ -2,9 +2,9 @@
 
 This program written in the C language will render random coloured rectangulars in the terminal, while the font, speed, density, color, ratio and number of  the shapes drawn are fully costumizable.
 
-![1.png](screenshots/1.png){height=200}
+[![1.png](screenshots/1.png){height=200}](https://www.youtube.com/watch?v=ccqlEQBE-bY)
 
-
+_Click on image to watch video_
 
 Every time a rectangular is complete, a new one starts to take shape.
 
