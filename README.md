@@ -1,6 +1,6 @@
 # C-SQUARES
 
-This program written in the C language will render random coloured rectangulars in the terminal, while the font, speed, density, color, ratio and number of  the shapes drawn are fully costumizable.
+This program written in the C language will render random coloured rectangulars in the terminal, while the font, speed, density, color, ratio and number of  the shapes drawn are fully customizable.
 
 [![1.png](screenshots/1.png){height=200}](https://www.youtube.com/watch?v=ccqlEQBE-bY)
 
