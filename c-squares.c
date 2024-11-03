@@ -5,6 +5,21 @@
 #include <time.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
+#include<signal.h>
+
+// found in https://www.geeksforgeeks.org/c-program-not-suspend-ctrlz-pressed/
+void sighandler(int sig_num) 
+{ 
+ printf("\033[?25h"); //show cursor
+ struct winsize w;
+ ioctl(0, TIOCGWINSZ, &w);
+ for (int x=0;x>w.ws_row;x++)
+ {
+  printf("\n");
+ }
+//    system("clear");
+ exit(0);
+} 
 int compareTwoString(char *, char *);
 
 void check_flags(int argc, char **argv,char **flag_short,char **flag_long,char **value_s)
@@ -89,7 +104,14 @@ void new_coordinates(int (*cursor_x)[10],int (*cursor_y)[10],int (*direction)[10
 }
 
 int main(int argc, char **argv) {
+ // Handling signals
+ signal(SIGTSTP, sighandler);
+ signal(SIGSTOP, sighandler);
+ signal(SIGKILL, sighandler);
+ signal(SIGINT, sighandler);
+ printf("\033[?25l"); //hide cursor
  srand(time(0));
+
 //declare variables
  char *flag_h="-h";
  char *flag_help="--help";
